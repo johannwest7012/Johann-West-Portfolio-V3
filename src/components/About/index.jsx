@@ -13,7 +13,7 @@ export default function About() {
   const ref = useRef(null);
 
   const [reveal, setReveal] = useState(false);
-  const onScreen = useOnScreen(ref);
+  const onScreen = useOnScreen(ref, 0.1);
 
   useEffect(() => {
     if (onScreen) setReveal(onScreen);
@@ -26,7 +26,7 @@ export default function About() {
 
       gsap.to(split.lines, {
         duration: 1,
-        y: -20,
+        y: 0,
         opacity: 1,
         stagger: 0.1,
         ease: "power4.out",
