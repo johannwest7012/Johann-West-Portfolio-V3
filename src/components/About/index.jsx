@@ -13,7 +13,7 @@ export default function About() {
   const ref = useRef(null);
 
   const [reveal, setReveal] = useState(false);
-  const onScreen = useOnScreen(ref, 0.2);
+  const onScreen = useOnScreen(ref);
 
   useEffect(() => {
     if (onScreen) setReveal(onScreen);

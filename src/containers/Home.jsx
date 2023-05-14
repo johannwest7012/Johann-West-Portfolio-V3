@@ -55,12 +55,12 @@ const Home = () => {
   }
 
   return (
-    <>
+    <div style={{height:"100vh"}}>
       <CustomCursor />
       {preloader ? (
         <div className="loader-wrapper absolute">
-          <h1>Flirty flowers</h1>
-          <h2>Rio de Janeiro</h2>
+          <h1>Portfolio</h1>
+          <h2>Johann West</h2>
         </div>
       ) : (
         <div
@@ -77,7 +77,7 @@ const Home = () => {
           <Footer />
         </div>
       )}
-    </>
+    </div>
   );
 };
 export default Home;

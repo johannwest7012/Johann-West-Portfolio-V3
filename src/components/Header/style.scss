@@ -9,7 +9,9 @@
 
     letter-spacing: 1px;
     font-family: 'Syncopate', sans-serif;
-    color: #626262;
+    //color: #626262;
+    //color: #FFFFFF;
+    color: 'black';
     font-weight: 600;
     text-transform: uppercase;
     
@@ -22,10 +24,11 @@
     font-size: 20vw;
     text-transform: uppercase;
     text-align: center;
+    //color: #FFFFFF;
+    color: 'black';
 
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 600;
-   
    
   }
 }
@@ -34,4 +37,13 @@
   .lineChildren{
     transform: translate(0, 500px);
   }
+}
+
+.svg {
+  position: absolute;
+  width: 50%;
+  z-index: -1;
+  top: 0;
+  left: 25%;
+  bottom: 10%;
 }

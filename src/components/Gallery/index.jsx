@@ -121,7 +121,7 @@ export default function Gallery({ src, index, columnOffset }) {
         </div>
         {images.map((image, index) => (
           <GalleryItem
-            key={src}
+            key={image.src}
             index={index}
             {...image}
             updateActiveImage={handleUpdateActiveImage}

@@ -2,9 +2,11 @@
   text-align: center;
   padding-bottom: 200px;
   .location {
-    font-size: 18vw;
+    font-size: 12vw;
     text-transform: uppercase;
     font-family: "Bodoni Moda", serif;
+   // color: #FFFFFF;
+   color: 'black';
 
     opacity: 0;
     &.is-reveal {

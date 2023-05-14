@@ -3,7 +3,10 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import SplitText from "../../utils/Split3.min";
 
+
+
 import "./style.scss";
+
 
 import lottie from 'lottie-web'
 
@@ -12,13 +15,14 @@ import lottie from 'lottie-web'
 export default function Header() {
 
   const container = useRef(null)
+
   useEffect(() => {
     lottie.loadAnimation({
-      container,
+      container: container.current,
       renderer: 'svg',
       load: true, 
       autoplay: true, 
-      animationData: ''
+      animationData: require('../../animations/animation2.json')
     })
 
     const split = new SplitText("#header-text", {
@@ -41,14 +45,16 @@ export default function Header() {
   }, []);
 
   return (
+
     <section className="header-container" data-scroll-section>
       <ul className="header-menu">
         <li>Intro</li>
         <li>About</li>
         <li>Featured</li>
       </ul>
-      <h1 id="header-text">Johann West</h1>
-      <div className="container" ref={container}></div>
+      <h1 id="header-text" >Johann West</h1>
+      <div className="svg" ref={container} /> 
     </section>
+ 
   );
 }

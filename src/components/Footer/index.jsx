@@ -11,7 +11,7 @@ export default function Footer() {
   const ref = useRef(null);
 
   const [reveal, setReveal] = useState(false);
-  const onScreen = useOnScreen(ref, 0.2);
+  const onScreen = useOnScreen(ref, 0.3);
 
   useEffect(() => {
     if (onScreen) setReveal(onScreen);
@@ -52,7 +52,7 @@ export default function Footer() {
         id="location-text"
         ref={ref}
       >
-        Rio de Janeiro
+        Nashville
       </h1>
     </section>
   );

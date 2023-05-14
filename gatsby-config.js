@@ -17,5 +17,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'public/circle.svg',
+      },
+    },
   ],
 }
