@@ -1,0 +1,116 @@
+.icondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+
+.sectionSubText {
+font-size: 14px;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+
+@media (min-width: 640px) {
+.sectionSubText {
+    font-size: 18px;
+}
+}
+
+.sectionSubTextSecondary {
+color: var(--text-secondary);
+}
+
+
+
+.sectionHeadText {
+    color: black;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  
+  @media (min-width: 640px) {
+    .sectionHeadText {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .sectionHeadText {
+      font-size: 60px;
+    }
+  }
+  
+  @media (max-width: 639px) {
+    .sectionHeadText {
+      font-size: 40px;
+    }
+  }
+
+
+  .vtdiv {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .exPoints {
+    color: #FFFFFF;
+    font-size: 14px;
+    padding-left: 1px;
+    letter-spacing: 0.05em;
+  }
+
+
+  .exPointsList {
+    margin-top: 5px;
+    list-style-type: disc;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+  .exPointsList li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .companyName {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: 'Syncopate', sans-serif;
+  }
+
+  .jobTitle {
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Syncopate', sans-serif;
+  }
+
+  .iconimg {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+
+  .padding {
+    padding: 10px 6px;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 0;
+  }
+  
+  @media (min-width: 640px) {
+    .padding {
+      padding: 16px 16px;
+    }
+  }

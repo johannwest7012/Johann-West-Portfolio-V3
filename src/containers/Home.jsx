@@ -74,10 +74,10 @@ const Home = () => {
         >
           <Navbar />
           <Header />
-          <Experience />
           <Intro />
           <Featured />
           <About />
+          <Experience />
           <Gallery />
           <Footer />
         </div>
