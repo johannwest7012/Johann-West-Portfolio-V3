@@ -12,6 +12,7 @@ import Gallery from "../components/Gallery";
 import useLocoScroll from "../hooks/useLocoScroll";
 
 import Intro from "../components/Intro";
+import Experience from "../components/Experience";
 
 import "../styles/home.scss";
 
@@ -73,6 +74,7 @@ const Home = () => {
         >
           <Navbar />
           <Header />
+          <Experience />
           <Intro />
           <Featured />
           <About />
