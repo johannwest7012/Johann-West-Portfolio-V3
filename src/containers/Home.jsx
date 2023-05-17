@@ -11,6 +11,8 @@ import About from "../components/About";
 import Gallery from "../components/Gallery";
 import useLocoScroll from "../hooks/useLocoScroll";
 
+import Intro from "../components/Intro";
+
 import "../styles/home.scss";
 
 const Home = () => {
@@ -71,6 +73,7 @@ const Home = () => {
         >
           <Navbar />
           <Header />
+          <Intro />
           <Featured />
           <About />
           <Gallery />

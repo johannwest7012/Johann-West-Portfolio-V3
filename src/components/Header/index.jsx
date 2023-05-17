@@ -48,9 +48,9 @@ export default function Header() {
 
     <section className="header-container" data-scroll-section>
       <ul className="header-menu">
-        <li>Intro</li>
-        <li>About</li>
-        <li>Featured</li>
+        <li>Full</li>
+        <li>Stack</li>
+        <li>Developer</li>
       </ul>
       <h1 id="header-text" >Johann West</h1>
       <div className="svg" ref={container} /> 

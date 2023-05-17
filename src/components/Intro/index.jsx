@@ -9,11 +9,11 @@ import useOnScreen from "../../hooks/useOnScreen";
 
 import "./style.scss";
 
-export default function About() {
+export default function Intro() {
   const ref = useRef(null);
 
   const [reveal, setReveal] = useState(false);
-  const onScreen = useOnScreen(ref, 0.1);
+  const onScreen = useOnScreen(ref, 0.01);
 
   useEffect(() => {
     if (onScreen) setReveal(onScreen);
@@ -37,16 +37,16 @@ export default function About() {
 
   return (
     <section
-      className={cn("about-section", { "is-reveal": reveal })}
+      className={cn("intro-section", { "is-reveal": reveal })}
       data-scroll-section
     >
-      <SectionHeader title="about" />
-      <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-        Flirty Flowers is a blog about flowers and the floral designers who make
-        them into art. Creativity and the art of ‘making’ require dialogue. The
-        full purpose of the Flirty Flowers blog is to encourage and inspire. We
-        value art, we value insight, and we value opinion.
+      <p ref={ref} id="headline" className={cn("header-one",{"is-reveal": reveal })}>
+        Engineered
       </p>
+      <p ref={ref} id="headline" className={cn("header-two",{ "is-reveal": reveal })}>
+        Beautifully
+      </p>
+
     </section>
   );
 }
