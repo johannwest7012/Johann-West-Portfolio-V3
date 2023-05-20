@@ -10,7 +10,7 @@
 
   .header-one {
     line-height: 1.12;
-    font-size: 8vw;
+    font-size: 7vw;
 
     opacity: 0;
     //color: #FFFFFF;
@@ -18,16 +18,17 @@
 
     > div {
       opacity: 0;
-      transform: translateY(100px);
+      transform: translateY(100px)
     }
     &.is-reveal {
       opacity: 1;
+
     }
   }
 
   .header-two {
     line-height: 1.12;
-    font-size: 8vw;
+    font-size: 6vw;
     text-align: right;
 
     opacity: 0;
@@ -43,6 +44,7 @@
     &.is-reveal {
       opacity: 1;
     }
+
   }
 
 

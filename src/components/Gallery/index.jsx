@@ -69,7 +69,9 @@ function GalleryItem({
         <div
           className="gallery-item-image"
           style={{ backgroundImage: `url(${src})` }}
-        ></div>
+        >
+          <a src=""/>
+        </div>
       </div>
       <div></div>
     </div>

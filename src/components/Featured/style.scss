@@ -1,6 +1,6 @@
 .featured-section {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr 1fr;
   // height: 100vh;
 
   align-items: center;
@@ -28,21 +28,34 @@
   }
 
   .featured-row-layout {
+    align-items: center;
+
     grid-template-rows: repeat(2, auto);
 
     img {
       width: 100%;
-      // height: 100%;
+      height: 100%;
       object-fit: cover;
+      transform: translateY(-25%);
+
     }
   }
   .featured-column-layout {
-    grid-template-columns: 100px auto;
+    //align-items: center;
+
+    grid-template-columns: 80px auto;
     align-items: flex-end;
     img {
       width: 100%;
-      height: 125vh;
+      height: 100%;
       object-fit: cover;
+    }
+    .img2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translateY(-25%);
+
     }
     h6 {
       transform: translateX(100%) rotate(-90deg);

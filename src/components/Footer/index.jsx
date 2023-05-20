@@ -45,7 +45,7 @@ export default function Footer() {
 
   return (
     <section className="footer" data-scroll-section>
-      <SectionHeader title="Made in" />
+      <SectionHeader title="Located In" />
 
       <h1
         className={cn("location", { "is-reveal": reveal })}
