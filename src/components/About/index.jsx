@@ -1,55 +1,53 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import cn from "classnames";
 
 import SectionHeader from "../SectionHeader";
+import { download } from "../../constants";
 
-import gsap from "gsap";
-import SplitText from "../../utils/Split3.min";
-import useOnScreen from "../../hooks/useOnScreen";
 
 import "./style.scss";
 
+
+// ABout without animations 
 export default function About() {
   const ref = useRef(null);
 
-  const [reveal, setReveal] = useState(false);
-  const onScreen = useOnScreen(ref, 0.1);
-
-  useEffect(() => {
-    if (onScreen) setReveal(onScreen);
-    else setReveal(false);
-  }, [onScreen]);
-
-  useEffect(() => {
-    if (reveal) {
-      const split = new SplitText("#headline", { type: "lines" });
-
-      gsap.to(split.lines, {
-        duration: 2,
-        y: 0,
-        opacity: 1,
-        stagger: 0.2,
-        ease: "power4.out",
-        // onComplete: () => split.revert(),
-      });
-    }
-  }, [reveal]);
+  const [reveal, setReveal] = useState(true);
 
   return (
     <section
-      className={cn("about-section", { "is-reveal": reveal })}
+      id="about"
+      className={cn("about-section-static", { "is-reveal": reveal })}
       data-scroll-section
     >
-      <SectionHeader title="about" />
-      <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Integer a sem turpis. Mauris quis ligula ligula. Donec 
-      placerat orci et felis scelerisque, vitae interdum enim aliquam. 
-      Phasellus tincidunt volutpat neque id fermentum. Morbi convallis 
-      erat in lorem placerat tincidunt. Etiam vitae fringilla sem. 
-      Quisque id consectetur felis. Sed ultrices nulla mauris, id 
-      congue purus eleifend eu. Nunc eget placerat est.
+      <SectionHeader title="about"/>
+      <h1 className="school-h" style={{fontWeight:"600",fontStyle:"italic"}}>Vanderbilt University 2024</h1>
+      <h1 className="school-h" style={{fontWeight:"600",fontStyle:"italic"}}>Bachelor of Science in Computer Science and Human Organizational Development</h1>
+      <h1 className="school-h">3.4 Computer Science GPA</h1>
+      <h1 className="school-h">35 ACT</h1>
+      <h1 className="school-h">Receivier of the John W & Ann Johnson Scholarship</h1>
+
+
+
+      <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })} style={{marginTop:'20px'}}>
+      Hi I’m Johann and I'm currently studying Computer Science and Human Organizational Development at Vanderbilt University. 
+      <br/>While the progression of my expertise is a constant endeavor, 
+      I have tangible professional experience being an integral part of multiple software development teams developing impactful systems and applications. 
+      <br/>
+      <br/>To me, programming is an engine for creativity and change. 
+      <br/>
+      <p style={{fontWeight:"600"}}>It’s artistic, and it's powerful.</p>
+      My next goal in my career is to contribute to and 
+      become a part of a team or an organization that shares my appreciation for the impact technology can have at every scale. 
+     
+     
       </p>
+      <div className="contact-container">
+        <p className="row contact-h">Email:  johannwest@gmail.com</p>
+        <p className="row contact-h">Mobile:  (931)-704-3785</p>
+        <a href="" className="row download">Download Resume <img src={download}></img></a>
+      </div>
     </section>
   );
 }
+

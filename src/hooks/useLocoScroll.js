@@ -1,12 +1,14 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function useLocoScroll(start) {
+
   useEffect(() => {
     if (!start) return;
     let locoScroll = null;
@@ -15,11 +17,12 @@ export default function useLocoScroll(start) {
 
     locoScroll = new LocomotiveScroll({
       el: scrollEl,
+      initPosition: {x : 0, y: 0},
       smooth: true,
       multiplier: 1,
       class: "is-reveal",
     });
-
+    
     locoScroll.on("scroll", () => {
       ScrollTrigger.update();
     });
@@ -27,17 +30,27 @@ export default function useLocoScroll(start) {
     ScrollTrigger.scrollerProxy(scrollEl, {
       scrollTop(value) {
         if (locoScroll) {
-          return arguments.length
-            ? locoScroll.scrollTo(value, 0, 0)
-            : locoScroll.scroll.instance.scroll.y;
+          if (arguments.length){
+     
+
+            return locoScroll.scrollTo(value, 0, 0)
+          }
+          else { 
+            return locoScroll.scroll.instance.scroll.y;
+          }
         }
         return null;
       },
       scrollLeft(value) {
         if (locoScroll) {
-          return arguments.length
-            ? locoScroll.scrollTo(value, 0, 0)
-            : locoScroll.scroll.instance.scroll.x;
+          if (arguments.length){
+   
+
+            return locoScroll.scrollTo(value, 0, 0)
+          }
+          else { 
+            return locoScroll.scroll.instance.scroll.x;
+          }
         }
         return null;
       },

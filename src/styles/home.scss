@@ -12,8 +12,10 @@
 
 
 //$bg-color: #808080;
-$bg-color: #ffff;
-//$bg-color: #ADD8E6;
+//$bg-color: #ffff;
+$bg-color: #fbf8f1;
+$bg-color2: #fdf0d3;
+//$bg-color: #fdf0d3;
 //$bg-color: #000000;
 //$bg-color: #626262;
 
@@ -23,16 +25,30 @@ $bg-color: #ffff;
 
 body {
   font-family: "Poppins", sans-serif;
-
   cursor: none;
-  background-color: $bg-color;
 }
 
 .main-container {
-  padding: 0 5vw;
+  font-family: "Poppins", sans-serif;
   // clip-path: inset(100% 0% 0% 0%);
   // backface-visibility: hidden;
 }
+
+.main-container .sub-class-1 {
+  /* Styles for the first subclass */
+  /* ... */
+  background-color: #fdf0d3;
+
+}
+
+.main-container .sub-class-2 {
+  /* Styles for the second subclass */
+  /* ... */
+  background-color: #fdf0d3;
+  padding: 0 5vw;
+
+}
+
 
 section {
   padding: 100px 0;
@@ -66,10 +82,38 @@ section {
   }
   h2 {
     font-size: 1.5vw;
-
     text-transform: uppercase;
     font-family: "Bodoni Moda", serif;
     font-style: italic;
     margin-top: 10px;
   }
+}
+
+@keyframes loading-line {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 200px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.loading-line-wrapper{
+  max-width: 1000px;
+  z-index: 10;
+  position: relative;
+}
+
+.loading-line {
+  position: relative;
+  top: 10px;
+  bottom: 0px;
+  left: 0;
+  height: 2px;
+  background-color: #dbd8d6;
+  animation: loading-line 1.5s linear infinite;
+  z-index: 10;
 }

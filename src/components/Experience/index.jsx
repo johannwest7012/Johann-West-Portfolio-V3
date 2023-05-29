@@ -39,7 +39,7 @@ import 'react-vertical-timeline-component/style.min.css'
 const ExperienceCard = ({experience}) => (
 
     <VerticalTimelineElement
-      contentStyle={{background:'black', color: '#fff'}}
+      contentStyle={{background:'black', color: 'black'}}
       contentArrowStyle={{borderRight:'7px solid black'}}
       date={experience.date}
       iconStyle={{ background: experience.iconBg, boxShadow: 'white 0px 0px 0px 5px' }}
@@ -75,12 +75,12 @@ const ExperienceCard = ({experience}) => (
   
   const Experience = () => {
     return (
-    <section className="header-container" data-scroll-section>
+    <section className="header-container" style={{backgroundColor:'#fdf0d3'}} data-scroll-section>
         <SectionHeader title="Experience" />
   
         <div className="vtdiv">
           <VerticalTimeline
-            lineColor={'black'}
+            lineColor={'white'}
           >
             {experiences.map((experience, index) => (
               <ExperienceCard key={index} experience={experience}/>

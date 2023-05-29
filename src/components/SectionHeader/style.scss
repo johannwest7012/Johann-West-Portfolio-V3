@@ -9,3 +9,35 @@
     color: 'black';
 
 }
+
+
+.section-header2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    //margin-left: 5vw;
+    font-family: 'Syncopate', sans-serif;
+    //color: #626262;
+   // color: #FFFFFF;
+    color: black;
+    //transform: translate(0, -8dvh);
+    position: absolute;
+    top: 3%;
+    left: 100px;
+    z-index: 1;
+
+}
+
+.section-header3{
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 5vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Syncopate', sans-serif;
+    //color: #626262;
+   // color: #FFFFFF;
+    color: 'black';
+
+}

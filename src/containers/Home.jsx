@@ -13,15 +13,19 @@ import useLocoScroll from "../hooks/useLocoScroll";
 
 import Intro from "../components/Intro";
 import Experience from "../components/Experience";
+import Skills from "../components/Skills";
+import TopNote from "../components/TopNote";
 
 import "../styles/home.scss";
+
 
 const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
 
 
-  useLocoScroll(!preloader);
+  let locoScroll = useLocoScroll(!preloader);
+
 
   useEffect(() => {
     if (!preloader && ref) {
@@ -30,6 +34,7 @@ const Home = () => {
       }
     }
   }, [preloader]);
+
 
   const [timer, setTimer] = React.useState(3);
 
@@ -64,23 +69,33 @@ const Home = () => {
         <div className="loader-wrapper absolute">
           <h1>Portfolio</h1>
           <h2>Johann West</h2>
+          <div className="loading-line" />
+      
         </div>
       ) : (
+        
         <div
           className="main-container"
           id="main-container"
           data-scroll-container
           ref={ref}
         >
-          <Navbar />
-          <Header />
-          <Intro />
-          <Featured />
-          <About />
-          <Experience />
-          <Gallery />
-          <Footer />
+
+          <div className="sub-class-1">
+            <TopNote />
+            <Navbar />
+            <Header />
+            <Gallery />
+          </div>
+          <div className="sub-class-2">
+            <Intro />
+            <Featured />
+            <About />
+            <Skills />
+            <Experience />
+          </div>
         </div>
+        
       )}
     </div>
   );

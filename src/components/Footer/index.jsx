@@ -45,14 +45,14 @@ export default function Footer() {
 
   return (
     <section className="footer" data-scroll-section>
-      <SectionHeader title="Located In" />
+      <SectionHeader title="-Johann" />
 
       <h1
         className={cn("location", { "is-reveal": reveal })}
         id="location-text"
         ref={ref}
       >
-        Nashville
+        Thanks for stopping by
       </h1>
     </section>
   );

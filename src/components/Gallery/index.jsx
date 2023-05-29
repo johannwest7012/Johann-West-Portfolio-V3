@@ -5,6 +5,7 @@ import useOnScreen from "../../hooks/useOnScreen";
 import cn from "classnames";
 
 import "./style.scss";
+import SectionHeader from "../SectionHeader";
 
 const images = [
   {
@@ -60,7 +61,7 @@ function GalleryItem({
       ref={ref}
     >
       <div></div>
-      <div className={"gallery-item"}>
+      <a href="/" className={"gallery-item"}>
         <div className="gallery-item-info">
           <h1 className="gallery-info-title">{title}</h1>
           <h2 className="gallery-info-subtitle">{subtitle}</h2>
@@ -70,9 +71,9 @@ function GalleryItem({
           className="gallery-item-image"
           style={{ backgroundImage: `url(${src})` }}
         >
-          <a src=""/>
+    
         </div>
-      </div>
+      </a>
       <div></div>
     </div>
   );
@@ -114,8 +115,8 @@ export default function Gallery({ src, index, columnOffset }) {
 
   return (
     <section data-scroll-section className="section-wrapper gallery-wrap">
-
       <div className="gallery" ref={ref}>
+        <SectionHeader title="projects" type="2"/>
         <div className="gallery-counter">
           <span>{activeImage}</span>
           <span className="divider" />
