@@ -67,7 +67,7 @@
 
 .hero-image {
   position: relative;
-  width: 80%;
+  width: 70%;
   max-width: 1500px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -90,6 +90,8 @@
   align-items: flex-start;
   width: 100%;
   max-width: 1500px;
+  margin-top: 50px;
+  
 }
 
 .inner-top-row {
@@ -169,10 +171,20 @@
 .project-subhead-text {
   text-align: left;
   margin-bottom: 10px;
-  font-size: 3vw;
-  font-weight: 300;
+  font-size: 2.5vw;
+  font-weight: 400;
   letter-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;}
+
+.description-subhead-text {
+  text-align: left;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  font-size: 1.5vw;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
 }
 
 .col-container { 
@@ -183,6 +195,8 @@
   max-width: 1500px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
   justify-content: space-between;
 }
 .col { 
@@ -219,4 +233,12 @@
   margin-bottom: 20px;;
   width: 70%;
   max-width: 1500px;
+}
+
+.image-list-caption {
+  margin: 20px;
+  font-size: large;
+  font-weight: 400;
+  max-width: 600px;
+  text-align: center;
 }

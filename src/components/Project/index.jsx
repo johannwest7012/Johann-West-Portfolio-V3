@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import "./style.scss";
 import SectionHeader from "../SectionHeader";
-import { test_project, backicon, githubicon } from "../../constants";
+import { projects, backicon, githubicon } from "../../constants";
 import lottie from "lottie-web";
 
 
 const Project = ({ id }) => {
-  const project = test_project;
+  const project = projects.find((item) => item.id === id);
+  console.log("Project:", project);
   const container = useRef(null);
 
   const github = project.github; 
@@ -24,10 +25,9 @@ const Project = ({ id }) => {
 
   return (
     <div className="wrapper">
-      <div className="behind-hero">
+      <div className="behind-hero" style={{background: project.background}}>
         <div className="top-row">
           <a href="/" className="back-to-home"><img className="back-icon" src={backicon} />Back</a>
-          <p className="top-note">Johann West</p>
         </div>
         <img className="hero-image" src={project.heroimg} alt="Hero" />
       </div>
@@ -87,12 +87,15 @@ const Project = ({ id }) => {
             <p className="project-subhead">Description -</p>
           </div>
           <div className="col">
-            <p className="project-subhead-text">{project.description}</p>
+            <p className="description-subhead-text">{project.description}</p>
           </div>
         </div>
         <div className="image-list-div">
-          {project.image_list.map((image, index) => (
-            <img src={image} className="image-list-img"/>
+          {project.image_list.map((item, index) => (
+            <>
+            <img src={item.image} className="image-list-img" key={index}/>
+            <p className="image-list-caption">{item.caption}</p>
+            </>
           ))}
         </div>
         

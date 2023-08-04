@@ -19,13 +19,16 @@ const projects = [
     title: "BettorAnalytics",
     subtitle: "CRUD Reporting and Tooling",
     category: "PROFESSIONAL - .NET/C# - Vue.js - PostgreSQL",
+    link: "/projects/2"
   },
   {
     src:
-      createximg,
+    createximg,
     title: "CreateX",
     subtitle: "Digital Asset Exchange Platform",
     category: "PERSONAL - Django/Python - React.js - PostgreSQL",
+    link: "/projects/1"
+
   },
   {
     src:
@@ -33,6 +36,8 @@ const projects = [
     title: "SafeRoute",
     subtitle: "Safety in Travel, For All",
     category: "PERSONAL - Express.js - React.js - Mongo DB",
+    link: "/projects/3"
+
   },
   {
     src:
@@ -40,6 +45,8 @@ const projects = [
     title: "QALY's Computation Application",
     subtitle: "Undergraduate CS Research Project (under development)",
     category: "RESEARCH - Django/Python - PostgreSQL",
+    link: "/projects/4"
+
   },
 ];
 function GalleryItem({
@@ -49,6 +56,7 @@ function GalleryItem({
   title,
   updateActiveImage,
   index,
+  link
 }) {
   const ref = useRef(null);
 
@@ -66,7 +74,7 @@ function GalleryItem({
       ref={ref}
     >
       <div></div>
-      <a href="/" className={"gallery-item"}>
+      <a href={link} className={"gallery-item"}>
         <div className="gallery-item-info">
           <h1 className="gallery-info-title">{title}</h1>
           <h2 className="gallery-info-subtitle">{subtitle}</h2>
@@ -127,11 +135,11 @@ export default function Gallery({ src, index, columnOffset }) {
           <span className="divider" />
           <span>{projects.length}</span>
         </div>
-        {projects.map((image, index) => (
+        {projects.map((project, index) => (
           <GalleryItem
-            key={image.src}
+            key={project.src}
             index={index}
-            {...image}
+            {...project}
             updateActiveImage={handleUpdateActiveImage}
           />
         ))}

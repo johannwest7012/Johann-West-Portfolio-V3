@@ -56,11 +56,46 @@ import cpluspluslogo from "./tech/cpluspluslogo.svg";
 import airtablelogo from "./tech/airtablelogo.svg";
 import mongologo from "./tech/mongo.svg";
 
+import creatextitle from "./creatextitle.svg";
+import cxdemo1 from "./createxdemo1.png";
+import cxdemo2 from "./createxdemo2.png";
+import cxdemo3 from "./createxdemo3.png";
+import cxdemo4 from "./createxdemo4.png";
+
+import batitle from "./batitle.png";
+import bademo1 from "./bademo1.png";
+import bademo2 from "./bademo2.png";
+import bademo3 from "./bademo3.png";
+import bademo4 from "./bademo4.png";
+
+import saferoutetitle from "./saferoutetitle.png";
+import saferoutedemo1 from "./saferoutedemo1.png";
+import saferoutedemo2 from "./saferoutedemo2.png";
+
+import qalytitle from "./qalycount.svg";
+import qalydemo1 from "./qalydemo1.svg";
+
+
 
 import download from "./download.png"
 
 
 export {
+  creatextitle,
+  cxdemo1,
+  cxdemo2,
+  cxdemo3,
+  cxdemo4,
+  batitle,
+  bademo1,
+  bademo2,
+  bademo3,
+  bademo4,
+  saferoutetitle,
+  saferoutedemo1,
+  saferoutedemo2,
+  qalytitle,
+  qalydemo1,
   logo,
   backend,
   creator,
