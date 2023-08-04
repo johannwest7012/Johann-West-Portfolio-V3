@@ -7,34 +7,39 @@ import cn from "classnames";
 import "./style.scss";
 import SectionHeader from "../SectionHeader";
 
-const images = [
+import createximg from "../../assets/creatextitle.svg"
+import bettoranalyticsimg from  "../../assets/basvg.svg"
+import saferouteimg from  "../../assets/saferoutetitle.png"
+import qalycountimg from "../../assets/qalycount.svg"
+
+const projects = [
   {
     src:
-      "https://images.unsplash.com/photo-1566204773863-cf63e6d4ab88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1345&q=100",
-    title: "Dracaena Trifasciata",
-    subtitle: "Live the Beauty",
-    category: "Shooting / Adv.Campaing",
+      bettoranalyticsimg,
+    title: "BettorAnalytics",
+    subtitle: "CRUD Reporting and Tooling",
+    category: "PROFESSIONAL - .NET/C# - Vue.js - PostgreSQL",
   },
   {
     src:
-      "https://images.unsplash.com/photo-1558603668-6570496b66f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=100",
-    title: "Cereus Penuvianus",
-    subtitle: "Live the Beauty",
-    category: "Shooting / Adv.Campaing",
+      createximg,
+    title: "CreateX",
+    subtitle: "Digital Asset Exchange Platform",
+    category: "PERSONAL - Django/Python - React.js - PostgreSQL",
   },
   {
     src:
-      "https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=100",
-    title: "Calliope",
-    subtitle: "Live the Beauty",
-    category: "Shooting / Adv.Campaing",
+      saferouteimg,
+    title: "SafeRoute",
+    subtitle: "Safety in Travel, For All",
+    category: "PERSONAL - Express.js - React.js - Mongo DB",
   },
   {
     src:
-      "https://images.unsplash.com/photo-1611145367651-6303b46e4040?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2006&q=100",
-    title: "Golden Pothos",
-    subtitle: "Living Room",
-    category: "Shooting / Adv.Campaing",
+      qalycountimg,
+    title: "QALY's Computation Application",
+    subtitle: "Undergraduate CS Research Project (under development)",
+    category: "RESEARCH - Django/Python - PostgreSQL",
   },
 ];
 function GalleryItem({
@@ -120,9 +125,9 @@ export default function Gallery({ src, index, columnOffset }) {
         <div className="gallery-counter">
           <span>{activeImage}</span>
           <span className="divider" />
-          <span>{images.length}</span>
+          <span>{projects.length}</span>
         </div>
-        {images.map((image, index) => (
+        {projects.map((image, index) => (
           <GalleryItem
             key={image.src}
             index={index}

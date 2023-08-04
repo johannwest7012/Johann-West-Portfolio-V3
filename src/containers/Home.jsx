@@ -18,14 +18,11 @@ import TopNote from "../components/TopNote";
 
 import "../styles/home.scss";
 
-
 const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
 
-
   let locoScroll = useLocoScroll(!preloader);
-
 
   useEffect(() => {
     if (!preloader && ref) {
@@ -34,7 +31,6 @@ const Home = () => {
       }
     }
   }, [preloader]);
-
 
   const [timer, setTimer] = React.useState(3);
 
@@ -63,24 +59,21 @@ const Home = () => {
   }
 
   return (
-    <div style={{height:"100vh"}}>
+    <div style={{ height: "100vh" }}>
       <CustomCursor />
       {preloader ? (
         <div className="loader-wrapper absolute">
           <h1>Portfolio</h1>
           <h2>Johann West</h2>
           <div className="loading-line" />
-      
         </div>
       ) : (
-        
         <div
           className="main-container"
           id="main-container"
           data-scroll-container
           ref={ref}
         >
-
           <div className="sub-class-1">
             <TopNote />
             <Navbar />
@@ -93,9 +86,12 @@ const Home = () => {
             <About />
             <Skills />
             <Experience />
+            <Footer />
+            <div style={{ height: "100px" }}>
+              <p>Thanks for looking :)</p>
+            </div>
           </div>
         </div>
-        
       )}
     </div>
   );

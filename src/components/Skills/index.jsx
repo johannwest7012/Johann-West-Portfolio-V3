@@ -26,7 +26,7 @@ const SkillCard = ({ title, text, logo, subtitle, bullets }) => {
                    <a href={bullets[2][1]} className='row transition bullet'>{bullets[2][0]}</a>}
          
         </div>
-      </div> )
+      </div>)
 
  
 
@@ -37,9 +37,10 @@ const Skills = () => {
  
   return (
     <section data-scroll-section>
-      <SectionHeader title="Skills" />
-      
+            <SectionHeader title="Skills" />
+
       <div className='cards-container'>
+
           {skills.map((card, index) => (
             <SkillCard
               key={index}

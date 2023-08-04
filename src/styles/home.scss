@@ -13,8 +13,12 @@
 
 //$bg-color: #808080;
 //$bg-color: #ffff;
-$bg-color: #fbf8f1;
-$bg-color2: #fdf0d3;
+
+// $bg-color: #fbf8f1;
+// $bg-color2: #fdf0d3;
+
+$bg-color: #f9f9f9; 
+$bg-color2: #f9f9f9;
 //$bg-color: #fdf0d3;
 //$bg-color: #000000;
 //$bg-color: #626262;
@@ -37,14 +41,17 @@ body {
 .main-container .sub-class-1 {
   /* Styles for the first subclass */
   /* ... */
-  background-color: #fdf0d3;
+ // background-color: #fdf0d3;
+ background-color: $bg-color;
 
 }
 
 .main-container .sub-class-2 {
   /* Styles for the second subclass */
   /* ... */
-  background-color: #fdf0d3;
+  //background-color: #fdf0d3;
+  background-color: $bg-color;
+
   padding: 0 5vw;
 
 }
@@ -73,7 +80,8 @@ section {
   flex-direction: column;
   transition: "all 0.25s ease-in-out";
   background-color: #191919;
-  color: #dbd8d6;
+  //color: #dbd8d6;
+  color: $bg-color;
   h1 {
     font-size: 1.5vw;
     text-transform: uppercase;
@@ -113,7 +121,8 @@ section {
   bottom: 0px;
   left: 0;
   height: 2px;
-  background-color: #dbd8d6;
+  //background-color: #dbd8d6;
+  background-color: $bg-color;
   animation: loading-line 1.5s linear infinite;
   z-index: 10;
 }

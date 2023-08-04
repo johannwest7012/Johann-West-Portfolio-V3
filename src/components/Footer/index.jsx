@@ -16,7 +16,6 @@ export default function Footer() {
   useEffect(() => {
     if (onScreen) setReveal(onScreen);
     else setReveal(false);
-
   }, [onScreen]);
 
   useEffect(() => {
@@ -45,15 +44,55 @@ export default function Footer() {
 
   return (
     <section className="footer" data-scroll-section>
-      <SectionHeader title="-Johann" />
+      <SectionHeader title="Contact" />
 
-      <h1
-        className={cn("location", { "is-reveal": reveal })}
-        id="location-text"
-        ref={ref}
-      >
-        Thanks for stopping by
-      </h1>
+      <div className="contact-card-container">
+        <div className="contact-container-column">
+          <div className="contact-card">
+            <div className="contact-row1">
+              <p className="contact-row1-text">Information</p>
+            </div>
+            <div className="contact-row2">
+              <div className="contact-column1">
+                <div className="contact-row-even">Name</div>
+                <div className="contact-row-odd">Email</div>
+                <div className="contact-row-even">Phone</div>
+                <div className="contact-row-odd">Graduation</div>
+
+              </div>
+              <div className="contact-column2">
+                <div className="contact-row-even">Johann West</div>
+                <div className="contact-row-odd">johannwest@gmail.com</div>
+                <div className="contact-row-even">(931)-704-3785</div>
+                <div className="contact-row-odd">May 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="contact-container-col">
+          <ul className="icons-wrapper">
+            <li>
+              <a className="linkedin" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <img src='/linkedinblue.svg'className="fa fa-linkedin" aria-hidden="true"></img>
+              </a>
+            </li>
+            <li>
+              <a className="github" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <img src='/githubpink.svg'className="fa fa-github" aria-hidden="true"></img>
+              </a>
+            </li>
+          </ul>
+          <img className="vandyimg" src="/vandybig.png"></img>
+        </div>
+      </div>
     </section>
   );
 }

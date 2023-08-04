@@ -41,6 +41,7 @@ import {
     juni,
     vandy,
     download,
+    mongologo
   } from "./assets";
   
 
@@ -53,10 +54,9 @@ const experiences = [
       iconBg: "white",
       date: "January 2021 - January 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Provided instruction to 20+ students weekly in OOP, algorithms, and game development courses.",
+        "Prepared student and class specific learning materials and conducted regular progress assessments.",
+        "Leveraged knowledge in Python, NumPy, Pandas, and Algorithms."
       ],
     },
     {
@@ -64,12 +64,11 @@ const experiences = [
       company_name: "Chalkline",
       icon: chalkline,
       iconBg: "white",
-      date: "Jan 2021 - Feb 2022",
+      date: "Sept 2022 - March 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Introduced an automated system for managing transactional email logic flow, eliminating approximately 10 person-hours by automating an average of 500 outgoing emails weekly.",
+        "Developed user interface with CRUD capabilities allowing internal employees to efficiently manage states related to users and user transactions of over 1,400,000 unique user instances.",
+        "Leveraged knowledge in React.js/JavaScript, PostgreSQL, Airtable, Agile, Bitbucket/Jira"
       ],
     },
     {
@@ -77,12 +76,12 @@ const experiences = [
       company_name: "Chalkline",
       icon: chalkline,
       iconBg: "white",
-      date: "Jan 2022 - Jan 2023",
+      date: "May 2023 - August 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Upgraded .NET project dependencies from .NET 2.0 to .NET 8.0 to ensure compatibility with modern technologies while improving application performance.",
+        "Revamped frontend design and structure using Vue.js, adhering to the MVC design patter. Replaced all views and controllers to achieve a modern and user-friendly interface.",
+        "Developed 10+ dynamic views that allowed B2B clients to access their secure data and analytics, providing valuable business intelligence.",
+        "Leveraged knowledge in Git, .NET/C#, Vue.js, PostgreSQL, AWS, Bitbucket/Jira, Agile, and MVC pattern.",
       ],
     },
     {
@@ -92,10 +91,8 @@ const experiences = [
       iconBg: "white",
       date: "Jan 2022 - Jan 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed Quality Adjusted Life Years computation framwork and full stack software application, utilizing a innovative LLM based approach",
+        "Explored and defined techniques for applying data governance on inconsistently sourced data.",
       ],
     },
    
@@ -125,11 +122,11 @@ const skills = [
   {
     title: "Python",
     logo: pythonlogo,
-    subtitle: "5 years educational experience", 
+    subtitle: "5 years academic experience", 
     bullets: [
       "- Full stack Django, REST API experience",
       "- Technical expertise with Pandas, Numpy",
-      ["- CreateX project", "https://github.com/johannwest7012/CreateXStaging"]
+      ["- CreateX Project", "https://github.com/johannwest7012/CreateXStaging"]
     ]
   },
   {
@@ -149,7 +146,7 @@ const skills = [
     bullets: [
       "- Proficient with PostgreSQL, MySQL",
       "- Multiple projects with SQL databases",
-      ["- CreateX PostgreSQL DB", "https://github.com/johannwest7012/CreateXStaging"]
+      ["- CreateX Project", "https://github.com/johannwest7012/CreateXStaging"]
     ]
   }, 
   {
@@ -159,7 +156,7 @@ const skills = [
     bullets: [
       "- Developed scalable web app UI with Vue.js template capabilities",
       "- Professional frontend dev experience",
-      ["- Bettor Analytics project", "https://github.com/johannwest7012"]
+      ["- BettorAnalytics project", "https://github.com/johannwest7012"]
     ]
   }, 
   {
@@ -169,17 +166,25 @@ const skills = [
     bullets: [
       "- Professional experience developing .NET web apps",
       "- Proficent with MVC framework and .NET Core",
-      ["- Portfolio Website", "https://github.com/johannwest7012"]
+      ["- BettorAnalytics Project", "https://github.com/johannwest7012"]
     ]
   },
   {
     title: "C++", 
     logo: cpluspluslogo,
-    subtitle: "3 years educational experience",
+    subtitle: "3 years academic experience",
     bullets: [
       "- Proficient with C++ OOP concepts",
-      "- Practiced with programming design patterns in C++",
-      ["- Portfolio Website", "https://github.com/johannwest7012"]
+      "- Practiced with programming design patterns in C++"
+    ]
+  },  {
+    title: "Mongo", 
+    logo: mongologo,
+    subtitle: "1 year personal experience",
+    bullets: [
+      "- Experience paired with Express.js",
+      "- Multiple projects with Mongo Atlas DBs",
+      ["- SafeRoute Project", "https://github.com/johannwest7012/"]
     ]
   }, {
     title: "AWS", 
@@ -207,9 +212,7 @@ const skills = [
     subtitle: "1 year professional experience",
     bullets: [
       "- Designed production Airtable DB system for client",
-      "",
-      ["- Portfolio Website", "https://github.com/johannwest7012"]
-    ]
+      "- Managed CRM operations for client"    ]
   }, 
   {
     title: "Agile", 

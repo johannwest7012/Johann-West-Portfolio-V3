@@ -21,24 +21,39 @@ export default function About() {
       data-scroll-section
     >
       <SectionHeader title="about"/>
+
+
+
+
       <h1 className="school-h" style={{fontWeight:"600",fontStyle:"italic"}}>Vanderbilt University 2024</h1>
+      <h1 className="school-h" style={{fontWeight:"600",fontStyle:"italic"}}>Dual Major</h1>
       <h1 className="school-h" style={{fontWeight:"600",fontStyle:"italic"}}>Bachelor of Science in Computer Science and Human Organizational Development</h1>
       <h1 className="school-h">3.4 Computer Science GPA</h1>
       <h1 className="school-h">35 ACT</h1>
       <h1 className="school-h">Receivier of the John W & Ann Johnson Scholarship</h1>
 
-
+    
 
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })} style={{marginTop:'20px'}}>
-      Hi I’m Johann and I'm currently studying Computer Science and Human Organizational Development at Vanderbilt University. 
-      <br/>While the progression of my expertise is a constant endeavor, 
-      I have tangible professional experience being an integral part of multiple software development teams developing impactful systems and applications. 
+      Hi I’m Johann, and I'm currently studying Computer Science and Human Organizational Development at Vanderbilt University. 
       <br/>
-      <br/>To me, programming is an engine for creativity and change. 
+      <p className="empty-line"></p>
+      A little about myself, I originate from a small, farm town in the Upper Cumberlands of Tennessee, but for the past few years I have been 
+      calling Nashville my home to pursue my college education as I prepare to start a career in technology. 
+      <p className="empty-line"></p>
+
+      I have impactful, professional experience being an part of multiple development teams developing software applications. 
       <br/>
-      <p style={{fontWeight:"600"}}>It’s artistic, and it's powerful.</p>
+      <p className="empty-line"></p>
+
+      And I believe I am just getting started, one of the many things I love about being a programmer is that you really never stop learning. 
+      <br/>
+      <p className="empty-line"></p>
       My next goal in my career is to contribute to and 
-      become a part of a team or an organization that shares my appreciation for the impact technology can have at every scale. 
+      become a part of a team or organization that shares my appreciation for the impact technology can have on all sectors of life. 
+      I believe software is our greatest expression of human creativity and achievement.
+      <p className="empty-line"></p>
+
      
      
       </p>

@@ -93,7 +93,7 @@ color: var(--text-secondary);
     //text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    font-family: "Bai Jamjuree";
+    font-family: 'DM Sans', sans-serif;
   }
 
   .iconimg {
@@ -115,5 +115,8 @@ color: var(--text-secondary);
     .padding {
       padding: 16px 16px;
     }
+  }
+  .empty-line {
+    margin-bottom: 1em;
   }
 

@@ -54,6 +54,8 @@ import csslogo from "./tech/csslogo.svg";
 import agilelogo from "./tech/agilelogo.png";
 import cpluspluslogo from "./tech/cpluspluslogo.svg";
 import airtablelogo from "./tech/airtablelogo.svg";
+import mongologo from "./tech/mongo.svg";
+
 
 import download from "./download.png"
 
@@ -108,4 +110,5 @@ export {
   juni,
   vandy,
   download,
+  mongologo,
 };

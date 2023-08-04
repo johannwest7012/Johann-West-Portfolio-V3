@@ -48,7 +48,7 @@ export default function Intro() {
         Hi - I'm Johann,
       </p>
       <p ref={ref} id="headline" className={cn("header-two",{ "is-reveal": reveal })}>
-      Engineer, Developer and Student 
+       Full Stack Developer and Student 
       </p>
     </section>
   );

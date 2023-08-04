@@ -5,7 +5,9 @@
   //background-color: #d53f41;
  // background-color: #4158D0;
   //background-image: linear-gradient(43deg, #fdf0d3 0%, #fbf8f1 100%);
-  background-image: linear-gradient(43deg, #8fff8b 0%,#f5ff8b 40%, #78acff 100%);
+  background-image: linear-gradient(43deg, #8fff8b 0%,#f5ff8b 20%, #fe7ba9 40%, #78acff 100%);
+  // background-image: linear-gradient(43deg, #8fff8b 0%,#f5ff8b 40%, #ff7285 100%);
+
 
   margin-left: -5vw;
   margin-right: -5vw;
@@ -74,7 +76,7 @@
       color: transparent;
       font-family: "Bai Jamjuree";
       font-weight: 400;
-      font-size: 6vw;
+      font-size: 4vw;
       -webkit-font-smoothing: antialiased;
       -webkit-text-stroke: 2px #120c08;
     }
@@ -105,6 +107,7 @@
   }
   .gallery-item-image {
     background-size: cover;
+    border-radius: 15px;
     background-position: center;
     transform-origin: center;
     width: 100%;

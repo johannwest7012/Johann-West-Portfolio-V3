@@ -1,15 +1,7 @@
-import { staggerContainer, textVariant } from '../../utils/motion'
 import React from "react";
-import { styles } from './style2'
 import { experiences } from "../../constants";
-
 import "./style.scss";
 import SectionHeader from "../SectionHeader";
-
-
-
-
-import { motion } from 'framer-motion'
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
 
 import 'react-vertical-timeline-component/style.min.css'
@@ -75,7 +67,7 @@ const ExperienceCard = ({experience}) => (
   
   const Experience = () => {
     return (
-    <section className="header-container" style={{backgroundColor:'#fdf0d3'}} data-scroll-section>
+    <section className="header-container" style={{backgroundColor:'#f9f9f9'}} data-scroll-section>
         <SectionHeader title="Experience" />
   
         <div className="vtdiv">

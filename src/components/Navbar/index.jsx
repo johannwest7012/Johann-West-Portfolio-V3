@@ -24,7 +24,7 @@ export default function Navbar() {
 
       <a className="nav-link">Resume</a>
 
-      <a href="https://www.linkedin.com/in/johann-west-89960120b/" className="nav-link">&nbsp;LinkedIn</a>
+      <a href="https://www.linkedin.com/in/johann-west-89960120b/" className="nav-link">LinkedIn</a>
     </div>
 
   );
