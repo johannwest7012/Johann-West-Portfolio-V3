@@ -19,7 +19,7 @@ const projects = [
     title: "BettorAnalytics",
     subtitle: "CRUD Reporting and Tooling",
     category: "PROFESSIONAL - .NET/C# - Vue.js - PostgreSQL",
-    link: "/projects/2"
+    link: "/projects/1"
   },
   {
     src:
@@ -27,7 +27,7 @@ const projects = [
     title: "CreateX",
     subtitle: "Digital Asset Exchange Platform",
     category: "PERSONAL - Django/Python - React.js - PostgreSQL",
-    link: "/projects/1"
+    link: "/projects/2"
 
   },
   {

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[230],{610:function(e,t,l){l.r(t);var r=l(7294),n=l(8356),a=l.n(n),s=l(6695),o=l(7858);l(1585);const c=a()({loader:()=>Promise.resolve().then(l.bind(l,1585)),loading:()=>r.createElement("div",null,"Loading...")});t.default=()=>r.createElement(o.zt,{store:s.Z},r.createElement(c,null))}}]);
+//# sourceMappingURL=component---src-pages-index-jsx-9d08751058cba409ac36.js.map
