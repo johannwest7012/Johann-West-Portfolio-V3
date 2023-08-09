@@ -19,6 +19,7 @@
     "eslint": "^7.14.0",
     "framer-motion": "^10.12.12",
     "gatsby": "^5.9.1",
+    "gatsby-plugin-babel": "^1.0.0",
     "gatsby-plugin-less": "^7.9.0",
     "gatsby-plugin-manifest": "^5.9.0",
     "gatsby-plugin-sass": "^6.9.0",
@@ -39,6 +40,24 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.2",
     "three": "^0.152.2"
+  },
+  "babel-plugin": {
+    "presets": [
+      [
+        "@babel/preset-react",
+        {
+          "development": "detect"
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "react-refresh/babel",
+        {
+          "skipEnvCheck": true
+        }
+      ]
+    ]
   },
   "engines": {
     "node": "20.3.0"

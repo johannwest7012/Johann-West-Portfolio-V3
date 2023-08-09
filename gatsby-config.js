@@ -22,6 +22,6 @@ module.exports = {
       options: {
         icon: 'src/assets/creator.png',
       },
-    },
+    }
   ],
 }
