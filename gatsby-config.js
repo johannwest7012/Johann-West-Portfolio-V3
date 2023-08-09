@@ -20,8 +20,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/assets/creator.png',
+        icon: 'src/assets/gradientcirlce.png',
       },
     }
   ],
 }
+

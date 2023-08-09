@@ -1,11 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./style.scss";
 
-
-
-import gsap from "gsap";
-import useOnScreen from "../../hooks/useOnScreen";
-import cn from "classnames";
+import { headshot2, vanderbiltcampus, vandylogo1 } from "../../assets";
 
 
 
@@ -18,15 +14,15 @@ export default function Featured() {
     <section className="featured-section"  data-scroll-section>
       <div className="featured-row-layout">
         <h6>&nbsp;</h6>
-        <img src='/headshot2.png' data-scroll/>
+        <img src={headshot2} data-scroll/>
       </div>
       <div className='featured-column-layout'>
         <h6>&nbsp;</h6>
-        <img src='/vanderbiltcampus.jpg' data-scroll/>
+        <img src={vanderbiltcampus} data-scroll/>
       </div>
       <div className="featured-column-layout">
         <h6>&nbsp;</h6>
-        <img src='/vandylogo.png' className='img2' data-scroll/>
+        <img src={vandylogo1} className='img2' data-scroll/>
       </div>
     </section>
   );

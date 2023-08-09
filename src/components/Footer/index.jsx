@@ -3,7 +3,8 @@ import useOnScreen from "../../hooks/useOnScreen";
 import SectionHeader from "../SectionHeader";
 import gsap from "gsap";
 import SplitText from "../../utils/Split3.min";
-import cn from "classnames";
+
+import { githubpink, linkedinblue, vandybig } from "../../assets";
 
 import "./style.scss";
 
@@ -81,7 +82,7 @@ export default function Footer() {
                                 <span></span>
                                 <span></span>
                                 <img
-                                    src="/linkedinblue.svg"
+                                    src={linkedinblue}
                                     className="fa fa-linkedin"
                                     aria-hidden="true"
                                 ></img>
@@ -98,14 +99,14 @@ export default function Footer() {
                                 <span></span>
                                 <span></span>
                                 <img
-                                    src="/githubpink.svg"
+                                    src={githubpink}
                                     className="fa fa-github"
                                     aria-hidden="true"
                                 ></img>
                             </a>
                         </li>
                     </ul>
-                    <img className="vandyimg" src="/vandybig.png"></img>
+                    <img className="vandyimg" src={vandybig}></img>
                 </div>
             </div>
         </section>

@@ -75,9 +75,14 @@ import saferoutedemo2 from "./saferoutedemo2.png";
 import qalytitle from "./qalycount.svg";
 import qalydemo1 from "./qalydemo1.svg";
 
+import download from "./download.png";
 
-
-import download from "./download.png"
+import headshot2 from "./headshot2.png";
+import vanderbiltcampus from "./vanderbiltcampus.jpg";
+import vandylogo1 from "./vandylogo.png";
+import vandybig from "./vandybig.png";
+import githubpink from "./githubpink.svg";
+import linkedinblue from "./linkedinblue.svg";
 
 
 export {
@@ -146,4 +151,10 @@ export {
   vandy,
   download,
   mongologo,
+  headshot2,
+  vanderbiltcampus,
+  vandylogo1,
+  vandybig,
+  githubpink, 
+  linkedinblue
 };
