@@ -51,12 +51,7 @@
       ]
     ],
     "plugins": [
-      [
-        "react-refresh/babel",
-        {
-          "skipEnvCheck": true
-        }
-      ]
+    
     ]
   },
   "engines": {
