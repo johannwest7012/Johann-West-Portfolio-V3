@@ -19,7 +19,7 @@ export default function Footer() {
     }, [onScreen]);
 
     useEffect(() => {
-        if (reveal) {
+        if (reveal && typeof window !== 'undefined') {
             const split = new SplitText("#location-text", {
                 type: "lines",
                 linesClass: "lineChildren",

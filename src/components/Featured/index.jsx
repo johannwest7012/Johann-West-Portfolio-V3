@@ -4,7 +4,6 @@ import "./style.scss";
 
 
 import gsap from "gsap";
-import SplitText from "../../utils/Split3.min";
 import useOnScreen from "../../hooks/useOnScreen";
 import cn from "classnames";
 

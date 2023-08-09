@@ -17,6 +17,8 @@ const CustomCursor = () => {
   });
 
   React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+
     document.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
 
@@ -29,7 +31,7 @@ const CustomCursor = () => {
         mouseY - secondaryCursor.current.clientHeight / 2;
     });
 
-    return () => {};
+    return () => {}; }
   }, []);
 
   React.useEffect(() => {

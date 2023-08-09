@@ -17,7 +17,8 @@ export default function Header() {
   const container = useRef(null)
 
   useEffect(() => {
-    lottie.loadAnimation({
+    if (typeof window !== 'undefined') {
+      lottie.loadAnimation({
       container: container.current,
       renderer: 'svg',
       load: true, 
@@ -41,7 +42,7 @@ export default function Header() {
       opacity: 1,
       stagger: 0.1,
       ease: "power2",
-    });
+    }); }
   }, []);
 
   return (

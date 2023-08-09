@@ -2,18 +2,22 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
+import LocomotiveScroll from "locomotive-scroll";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function useLocoScroll(start) {
 
   useEffect(() => {
-    if (!start) return;
+    if (!start) return; 
+
     let locoScroll = null;
 
     const scrollEl = document.querySelector("#main-container");
+    if (!scrollEl) return;
+
 
     locoScroll = new LocomotiveScroll({
       el: scrollEl,

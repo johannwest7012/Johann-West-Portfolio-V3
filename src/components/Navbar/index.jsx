@@ -2,8 +2,11 @@ import React, { useRef, useEffect } from "react";
 import "./style.scss";
 import { Link } from "react-router-dom";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
-import LocomotiveScroll from "locomotive-scroll";
 import { useDispatch } from "react-redux";
+
+if (typeof window !== 'undefined') {
+    const LocomotiveScroll = require('locomotive-scroll');
+}
 
 export default function Navbar() {
     const dispatch = useDispatch();

@@ -9,7 +9,8 @@ import Header from "../components/Header";
 import Featured from "../components/Featured";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
-import useLocoScroll from "../hooks/useLocoScroll";
+//import useLocoScroll from "../hooks/useLocoScroll";
+import LoadableLocoScroll from "../hooks/LoadableLocoScroll";
 
 import Intro from "../components/Intro";
 import Experience from "../components/Experience";
@@ -22,7 +23,6 @@ const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
 
-  let locoScroll = useLocoScroll(!preloader);
 
   useEffect(() => {
     if (!preloader && ref) {
@@ -32,6 +32,8 @@ const Home = () => {
     }
   }, [preloader]);
 
+  //let locoScroll = useLocoScroll(!preloader);
+  
   const [timer, setTimer] = React.useState(3);
 
   const id = React.useRef(null);
@@ -61,6 +63,8 @@ const Home = () => {
   return (
     <div style={{ height: "100vh" }}>
       <CustomCursor />
+      <LoadableLocoScroll />
+
       {preloader ? (
         <div className="loader-wrapper absolute">
           <h1>Portfolio</h1>
@@ -68,6 +72,7 @@ const Home = () => {
           <div className="loading-line" />
         </div>
       ) : (
+       
         <div
           className="main-container"
           id="main-container"
@@ -91,7 +96,7 @@ const Home = () => {
               <p>Thanks for looking :)</p>
             </div>
           </div>
-        </div>
+        </div>  
       )}
     </div>
   );

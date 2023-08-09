@@ -5,13 +5,17 @@ import { projects, backicon, githubicon } from "../../constants";
 import lottie from "lottie-web";
 
 
+
+
 const Project = ({ id }) => {
   const project = projects.find((item) => item.id === id);
+
+
   console.log("Project:", project);
   const container = useRef(null);
 
-  const github = project.github; 
-  const live = project.live; 
+  // const github = project.github; 
+  // const live = project.live; 
 
   useEffect(() => {
     lottie.loadAnimation({
@@ -23,7 +27,11 @@ const Project = ({ id }) => {
     });
   }, []);
 
+  console.log("project id", id);
+
   return (
+    <div>
+    {(project) ? (
     <div className="wrapper">
       <div className="behind-hero" style={{background: project.background}}>
         <div className="top-row">
@@ -36,7 +44,7 @@ const Project = ({ id }) => {
       <div className="inner">
         <div className="inner-title-row">
           <span className="project-name">{project.name} </span>
-          {live ? (<a href={project.live_link} className="access-project">Access the project<img className="access-project-icon" src={backicon} /></a>
+          {project.live ? (<a href={project.live_link} className="access-project">Access the project<img className="access-project-icon" src={backicon} /></a>
             ) : null}
         </div>
         <div className="separator"></div>
@@ -67,7 +75,7 @@ const Project = ({ id }) => {
             <p className="project-subhead-text">{project.technologies}</p>
           </div>
         </div>
-        {github ? (
+        {project.github ? (
           <div className="col-container">
             <div className="col">
               <p className="project-subhead">    
@@ -105,6 +113,8 @@ const Project = ({ id }) => {
          
       </div>
     </div>
+    </div>
+    ) : <div>This wasn't supposed to happen :/</div>}
     </div>
   );
 };

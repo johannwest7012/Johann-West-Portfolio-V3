@@ -13,11 +13,25 @@ const HomeLazy = Loadable({
   loading: loader,
 });
 
+// const Index = () => {
+//   return (
+//     <Provider store={store}>
+//       <HomeLazy />
+//     </Provider>
+//   );
+// };
+
 const Index = () => {
-  return (
-    <Provider store={store}>
-      <HomeLazy />
-    </Provider>
-  );
+  // Check if the code is running in a browser environment
+  if (typeof window !== 'undefined') {
+    return (
+      <Provider store={store}>
+        <HomeLazy />
+      </Provider>
+    );
+  }
+  
+  // If not in a browser environment, return null or a placeholder
+  return null; // Or any other content you prefer
 };
 export default Index;
