@@ -84,6 +84,9 @@ import vandybig from "./vandybig.png";
 import githubpink from "./githubpink.svg";
 import linkedinblue from "./linkedinblue.svg";
 
+import downloadicon from "./downloadicon.png";
+
+import resumepdf from "./Resume/Resume_West.pdf";
 
 export {
   creatextitle,
@@ -156,5 +159,7 @@ export {
   vandylogo1,
   vandybig,
   githubpink, 
-  linkedinblue
+  linkedinblue, 
+  downloadicon,
+  resumepdf,
 };

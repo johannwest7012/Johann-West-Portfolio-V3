@@ -3,6 +3,7 @@ import cn from "classnames";
 
 import SectionHeader from "../SectionHeader";
 import { download } from "../../constants";
+import { downloadicon, resumepdf } from "../../assets";
 
 
 import "./style.scss";
@@ -60,7 +61,7 @@ export default function About() {
       <div className="contact-container">
         <p className="row contact-h">Email:  johannwest@gmail.com</p>
         <p className="row contact-h">Mobile:  (931)-704-3785</p>
-        <a href="" className="row download">Download Resume <img src={download}></img></a>
+        <a href={resumepdf} download="Johann_West_Resume.pdf" className="row download">Download Resume <img src={downloadicon}></img></a>
       </div>
     </section>
   );

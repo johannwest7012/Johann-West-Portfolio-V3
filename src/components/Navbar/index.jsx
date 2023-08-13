@@ -3,6 +3,7 @@ import "./style.scss";
 import { Link } from "react-router-dom";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import { useDispatch } from "react-redux";
+import { downloadicon, resumepdf } from "../../assets";
 
 if (typeof window !== 'undefined') {
     const LocomotiveScroll = require('locomotive-scroll');
@@ -23,7 +24,10 @@ export default function Navbar() {
                 Github
             </a>
 
-            <a className="nav-link">Resume</a>
+            <a className="nav-link" href={resumepdf} download="Johann_West_Resume.pdf">
+                Resume
+                <img className="download-icon-img" src={downloadicon}></img>
+            </a>
 
             <a href="https://www.linkedin.com/in/johann-west-89960120b/" target="_blank" className="nav-link">
                 LinkedIn
