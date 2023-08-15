@@ -3,7 +3,7 @@
 <defs>
 </defs>
 <rect x="0" y="0" width="100%" height="100%" fill="rgba(255,255,255,0)"/>
-<g transform="matrix(2.8409 0 0 2.8409 499.9991 499.9985)" id="377289">
+<g transform="matrix(-2.8409 0 0 2.8409 499.9991 499.9985)" id="377289">
 <polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" points="96,-127.6 63.7,-160 -96,0 -96,0 -96,0 63.7,160 96,127.6 -31.3,0 "/>
 </g>
 </svg>

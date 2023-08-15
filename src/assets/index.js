@@ -40,6 +40,7 @@ import tripguide from "./tripguide.png";
 import cover from "./cover.jpg";
 
 import backicon from "./backicon2.svg";
+import forwardicon from"./forwardicon2.svg";
 import githubicon from "./github-mark.svg";
 
 import pythonlogo from "./tech/pythonlogo.svg";
@@ -162,4 +163,5 @@ export {
   linkedinblue, 
   downloadicon,
   resumepdf,
+  forwardicon,
 };

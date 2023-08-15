@@ -58,7 +58,7 @@ import {
     saferoutedemo2,
     qalytitle,
     qalydemo1,
-    
+    forwardicon
 } from "./assets";
 
 // Constants
@@ -89,6 +89,7 @@ const projects = [
         github_link: "",
         live: false,
         live_link: "",
+        video_id: "14a4BSiEttc",
         image_list: [
             { image: bademo1, caption: `Dashboard - Comprehensive overview of client data providing accessible but informative metrics.` },
             { image: bademo2, caption: `Example of Table View Analytics Report - BettorAnalytics includes a total of 10 table view analytics reports that clients can view as well as customize with their own filtering and sorting parameters. Each row contains fields that are expandable into further views. Clients can also download any report.` },
@@ -119,6 +120,7 @@ const projects = [
         github_link: "https://github.com/johannwest7012/CreateX",
         live: true,
         live_link: "https://github.com/johannwest7012/CreateX",
+        video_id: "14a4BSiEttc",
         image_list: [
             { image: cxdemo1, caption: `Home Page - Introducing the user to the platform` },
             { image: cxdemo2, caption: `Profile Page - Manage your profile and view your order history` },
@@ -146,6 +148,7 @@ const projects = [
         github_link: "https://github.com/johannwest7012/SafeRoute",
         live: true,
         live_link: "https://github.com/johannwest7012/SafeRoute",
+        video_id: "14a4BSiEttc",
         image_list: [
             { image: saferoutedemo2, caption: `Landing Page - Introducing the user to SafeRoute.` },
             { image: saferoutedemo1, caption: `Main Page - Here a user can query a specific country, and select it to add it to their travel iterary.` },
@@ -172,6 +175,7 @@ const projects = [
         github_link: "",
         live: false,
         live_link: "",
+        video_id: "14a4BSiEttc",
         image_list: [ { image: qalydemo1, caption: `QalyCount is currently under development` },],
     },
 ];
@@ -354,4 +358,5 @@ export {
     projects,
     backicon,
     githubicon,
+    forwardicon,
 };
