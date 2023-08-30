@@ -68,6 +68,8 @@ function GalleryItem({
     }
   }, [onScreen, index]);
 
+
+
   return (
     <div
       className={cn("gallery-item-wrapper", { "is-reveal": onScreen })}

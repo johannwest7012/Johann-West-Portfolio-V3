@@ -8,13 +8,12 @@ import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 
 const Project = ({ id }) => {
-  const [preloader, setPreload] = useState(true);
-  const [timer, setTimer] = React.useState(1);
-
+    const [preloader, setPreload] = useState(true);
+    const [timer, setTimer] = React.useState(1);
 
     const project = projects.find((item) => item.id === id);
 
-    console.log("Project:", project);
+    //console.log("Project:", project);
     const container = useRef(null);
 
     // const github = project.github;
@@ -31,23 +30,23 @@ const Project = ({ id }) => {
     }, []);
 
     const clear = () => {
-      window.clearInterval(id.current);
-      setPreload(false);
+        window.clearInterval(id.current);
+        setPreload(false);
     };
 
     const refid = React.useRef(null);
 
     React.useEffect(() => {
-      refid.current = window.setInterval(() => {
-        setTimer((time) => time - 1);
-      }, 1000);
-      return () => clear();
+        refid.current = window.setInterval(() => {
+            setTimer((time) => time - 1);
+        }, 1000);
+        return () => clear();
     }, []);
-  
+
     React.useEffect(() => {
-      if (timer === 0) {
-        clear();
-      }
+        if (timer === 0) {
+            clear();
+        }
     }, [timer]);
 
     console.log("project id", id);
@@ -56,39 +55,41 @@ const Project = ({ id }) => {
     var forwardlink = null;
     if (id - 1 > 0) {
         backlink = "/projects/" + `${parseInt(id) - 1}`;
-    } 
-    if (id < projects.length){
-      forwardlink = "/projects/" + `${parseInt(id) + 1}`;
     }
-    
-    
+    if (id < projects.length) {
+        forwardlink = "/projects/" + `${parseInt(id) + 1}`;
+    }
+
     return (
         <>
             {preloader ? (
-        <div className="loader-wrapper absolute">
-          <h1>Portfolio</h1>
-          <h2>Johann West</h2>
-          <div className="loading-line" />
-        </div>
-      ) : (
+                <div className="loader-wrapper absolute">
+                    <h1>Portfolio</h1>
+                    <h2>Johann West</h2>
+                    <div className="loading-line" />
+                </div>
+            ) : (
                 <div>
                     {project ? (
                         <div className="wrapper">
                             <div className="behind-hero" style={{ background: project.background }}>
                                 <div className="top-row">
-                                  {backlink ? ( <a href={backlink} className="back-to-home">
-                                        <img className="back-icon" src={backicon} />
-                                        Previous
-                                    </a>): null}
-                                    
+                                    {backlink ? (
+                                        <a href={backlink} className="back-to-home">
+                                            <img className="back-icon" src={backicon} />
+                                            Previous
+                                        </a>
+                                    ) : null}
+
                                     <a href="/" className="back-to-home">
                                         Home
                                     </a>
-                                    {forwardlink ? ( <a href={forwardlink} className="back-to-home">
-                                        Next
-                                        <img className="back-icon" src={forwardicon} />
-                                    </a>): null}
-                                   
+                                    {forwardlink ? (
+                                        <a href={forwardlink} className="back-to-home">
+                                            Next
+                                            <img className="back-icon" src={forwardicon} />
+                                        </a>
+                                    ) : null}
                                 </div>
                                 <img className="hero-image" src={project.heroimg} alt="Hero" />
                             </div>
@@ -160,8 +161,17 @@ const Project = ({ id }) => {
                                         </div>
                                     </div>
                                     <div className="image-list-div">
-                                        <YouTubePlayer videoId={project.video_id} />
-                                        <p className="image-list-caption"> Demo Video (5 min)</p>
+                                        {project.video_id ? (
+                                            <>
+                                                <YouTubePlayer videoId={project.video_id} />
+                                                <p className="image-list-caption">
+                                                    {" "}
+                                                    Demo Video (5 min)
+                                                </p>
+                                            </>
+                                        ) : null}
+                                        {/* <YouTubePlayer videoId={project.video_id} />
+                                        <p className="image-list-caption"> Demo Video (5 min)</p> */}
                                         {project.image_list.map((item, index) => (
                                             <>
                                                 <img
@@ -177,10 +187,10 @@ const Project = ({ id }) => {
                             </div>
                         </div>
                     ) : (
-                        <div>This wasn't supposed to happen :/</div>
+                        <div>BAD URL 404 grr</div>
                     )}
                 </div>
-      )}
+            )}
         </>
     );
 };

@@ -7,20 +7,19 @@ import Project from "../../components/Project";
 import Home from "../../containers/Home";
 import CustomCursor from "../../CustomCursor";
 
-
 const loader = () => <div>Loading.</div>;
 //
 const HomeLazy = Loadable({
-  loader: () => import("../../containers/Home"), 
-  loading: loader,
+    loader: () => import("../../containers/Home"),
+    loading: loader,
 });
 
-const ProjectPage = ({id}) => {
-  return (
-    <Provider store={store}>
-        <CustomCursor/>
-      <Project id={id} />
-    </Provider>
-  );
+const ProjectPage = ({ id }) => {
+    return (
+        <Provider store={store}>
+            <CustomCursor />
+            <Project id={id} />
+        </Provider>
+    );
 };
 export default ProjectPage;

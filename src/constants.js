@@ -63,13 +63,15 @@ import {
 
 // Constants
 
+
+
 const projects = [
     {
         id: "1",
         name: "BettorAnalytics",
         category: "Full Stack Development",
         client: "Chalkline - Professional",
-        technologies: ".NET/C#, Vue.js, PostgreSQL",
+        technologies: ".NET/C#, Vue.js, PostgreSQL, Bitbucket",
         description: `BettorAnalytics is a CRUD and business analytics application, 
                       used by Chalkline's over 200 B2B clients. BettorAnalytics is 
                       data focused, and provides Chalkline clients with the capability to view condensed as 
@@ -89,7 +91,7 @@ const projects = [
         github_link: "",
         live: false,
         live_link: "",
-        video_id: "14a4BSiEttc",
+        video_id: "FTCQUhAD9FA",
         image_list: [
             { image: bademo1, caption: `Dashboard - Comprehensive overview of client data providing accessible but informative metrics.` },
             { image: bademo2, caption: `Example of Table View Analytics Report - BettorAnalytics includes a total of 10 table view analytics reports that clients can view as well as customize with their own filtering and sorting parameters. Each row contains fields that are expandable into further views. Clients can also download any report.` },
@@ -103,7 +105,7 @@ const projects = [
         name: "CreateX",
         category: "Full Stack Development",
         client: "Personal",
-        technologies: "Django/Python, PostgreSQL, React.js",
+        technologies: "Django/Python, PostgreSQL, React.js, AWS RDS, AWS S3",
         description: `CreateX is a content-creator themed, virtual-asset, exchange-market application hosted on Heroku 
                       and built with Django, React.js, and PostgreSQL. 
                       
@@ -120,7 +122,7 @@ const projects = [
         github_link: "https://github.com/johannwest7012/CreateX",
         live: true,
         live_link: "https://github.com/johannwest7012/CreateX",
-        video_id: "14a4BSiEttc",
+        video_id: "f_N2vmV1rPQ",
         image_list: [
             { image: cxdemo1, caption: `Home Page - Introducing the user to the platform` },
             { image: cxdemo2, caption: `Profile Page - Manage your profile and view your order history` },
@@ -148,7 +150,7 @@ const projects = [
         github_link: "https://github.com/johannwest7012/SafeRoute",
         live: true,
         live_link: "https://github.com/johannwest7012/SafeRoute",
-        video_id: "14a4BSiEttc",
+        video_id: "rMgzdVeFnZ8",
         image_list: [
             { image: saferoutedemo2, caption: `Landing Page - Introducing the user to SafeRoute.` },
             { image: saferoutedemo1, caption: `Main Page - Here a user can query a specific country, and select it to add it to their travel iterary.` },
@@ -159,23 +161,23 @@ const projects = [
         id: "4",
         name: "QALY'S Computation Application",
         category: "Full Stack Development",
-        client: "Research (Under Development)",
-        technologies: "Django/Python, PostgreSQL",
+        client: "CS Research (In Progress)",
+        technologies: "Django/Python, React.js, PostgreSQL",
         description: `QalyCount is a project credited for Undergraduate Computer Science research at Vanderbilt University, under 
                     the supervision of the Vanderbilt School of Engineering and Dr. Vikash Singh.
                     QalyCount intends to provide a Quality Adjusted Life Years computation 
                     framework and full stack software application, utilizing a innovative LLM based approach in order 
-                    to create a partially subjective but evidence supported QALY metric, and QALY computational 
-                    functionalites based on the metric as well as a collection of external parameters. QalyCount 
-                    utilizes large language models in order to take an evidence based approach to measuring the severity of 
-                    subjective life conditions, specifically life quality detractors.`,
+                    to create a practically usable QALY metric, and QALY computation
+                    system based on that metric as well as a collection of user-provided parameters. QalyCount 
+                    utilizes large language models in order to bring practicality and scalability to measuring cost to benefit ratios of altruistic efforts.
+                    
+                   `,
         heroimg: qalytitle,
         background: "linear-gradient(to right, #ffffff, #5BF94B)",
         github: false,
         github_link: "",
         live: false,
         live_link: "",
-        video_id: "14a4BSiEttc",
         image_list: [ { image: qalydemo1, caption: `QalyCount is currently under development` },],
     },
 ];

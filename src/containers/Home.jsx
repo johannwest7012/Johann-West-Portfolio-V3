@@ -34,7 +34,7 @@ const Home = () => {
 
   //let locoScroll = useLocoScroll(!preloader);
   
-  const [timer, setTimer] = React.useState(3);
+  const [timer, setTimer] = React.useState(2);
 
   const id = React.useRef(null);
 
