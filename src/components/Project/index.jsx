@@ -12,12 +12,8 @@ const Project = ({ id }) => {
     const [timer, setTimer] = React.useState(1);
 
     const project = projects.find((item) => item.id === id);
-
-    //console.log("Project:", project);
     const container = useRef(null);
 
-    // const github = project.github;
-    // const live = project.live;
 
     useEffect(() => {
         lottie.loadAnimation({
@@ -98,7 +94,7 @@ const Project = ({ id }) => {
                                     <div className="inner-title-row">
                                         <span className="project-name">{project.name} </span>
                                         {project.live ? (
-                                            <a href={project.live_link} className="access-project">
+                                            <a href={project.live_link} target="_blank" className="access-project">
                                                 Access the project
                                                 <img
                                                     className="access-project-icon"
@@ -144,7 +140,7 @@ const Project = ({ id }) => {
                                                 <p className="project-subhead">Github -</p>
                                             </div>
                                             <div className="col">
-                                                <a href={project.github_link}>
+                                                <a href={project.github_link} target="_blank">
                                                     <img src={githubicon} className="git-icon" />
                                                 </a>
                                             </div>
@@ -170,8 +166,7 @@ const Project = ({ id }) => {
                                                 </p>
                                             </>
                                         ) : null}
-                                        {/* <YouTubePlayer videoId={project.video_id} />
-                                        <p className="image-list-caption"> Demo Video (5 min)</p> */}
+                                       
                                         {project.image_list.map((item, index) => (
                                             <>
                                                 <img

@@ -121,7 +121,7 @@ const projects = [
         github: true,
         github_link: "https://github.com/johannwest7012/CreateX",
         live: true,
-        live_link: "https://github.com/johannwest7012/CreateX",
+        live_link: "https://createx.herokuapp.com/#/landing",
         video_id: "f_N2vmV1rPQ",
         image_list: [
             { image: cxdemo1, caption: `Home Page - Introducing the user to the platform` },
@@ -174,10 +174,10 @@ const projects = [
                    `,
         heroimg: qalytitle,
         background: "linear-gradient(to right, #ffffff, #5BF94B)",
-        github: false,
-        github_link: "",
-        live: false,
-        live_link: "",
+        github: true,
+        github_link: "https://github.com/johannwest7012/QALY_Computation_Project/",
+        live: true,
+        live_link: "https://github.com/johannwest7012/QALY_Computation_Project/",
         image_list: [ { image: qalydemo1, caption: `QalyCount is currently under development` },],
     },
 ];
