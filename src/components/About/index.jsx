@@ -29,7 +29,7 @@ export default function About() {
       <h1 className="school-h" style={{fontWeight:"600",fontStyle:"italic"}}>Vanderbilt University 2024</h1>
       <h1 className="school-h" style={{fontWeight:"600",fontStyle:"italic"}}>Dual Major</h1>
       <h1 className="school-h" style={{fontWeight:"600",fontStyle:"italic"}}>Bachelor of Science in Computer Science and Human Organizational Development</h1>
-      <h1 className="school-h">3.4 Computer Science GPA</h1>
+      <h1 className="school-h">3.5 Computer Science GPA</h1>
       <h1 className="school-h">35 ACT</h1>
       <h1 className="school-h">Receivier of the John W & Ann Johnson Scholarship</h1>
 
